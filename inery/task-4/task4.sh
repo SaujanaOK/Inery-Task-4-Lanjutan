@@ -116,42 +116,63 @@ EOF
 
 create_readme(){
 cat <<'EOF' > readme.md
-### Prerequisite
+## Prerequisite
 
-- [NodeJS](https://nodejs.org/en/)
+#### Remove Previous Nodejs
+```shell
+sudo apt-get remove nodejs
+```
 
-- NPM
+#### Install Curl
+
+```shell
+sudo apt-get install curl
+```
+
+#### Install NodeJS
+
+```shell
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
+
+#### Install npm
+```shell
+sudo apt install npm
+```
+_____________________
 
 
+## How to run solution
 
-### How to run
-
-Change directory to ```CHANGE_WITH_YOUR_MAIN_INERY_ACCOUNT```
+#### Change directory to ```CHANGE_WITH_YOUR_MAIN_INERY_ACCOUNT```
 
 ```shell
 cd ./CHANGE_WITH_YOUR_MAIN_INERY_ACCOUNT
 ```
 
-Create .env and edit the variable
-
-PRIVATE_KEY=YOUR PRIVATE KEY
-
-INERY_ACCOUNT=YOUR INERY ACCOUNT
-
-
-```shell
-nano .env
-```
-
-Install dependencies
+#### Install dependencies
 
 ```shell
 npm install
 ```
 
-Run the script
-
+#### Copy `.env-sample` and rename it to `.env`
+```shell
+cp .env-sample .env
 ```
+
+#### Edit ```.env``` file with your information
+
+```shell
+nano .env
+```
+####### PRIVATE_KEY=YOUR PRIVATE KEY
+####### INERY_ACCOUNT=YOUR INERY ACCOUNT
+
+#### Run the script
+
+```shell
 npm run solution
 ```
 EOF
