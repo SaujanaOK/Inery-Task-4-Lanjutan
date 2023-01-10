@@ -133,8 +133,11 @@ cd ./CHANGE_WITH_YOUR_MAIN_INERY_ACCOUNT
 ```
 
 Create .env and edit the variable
+
 PRIVATE_KEY=YOUR PRIVATE KEY
+
 INERY_ACCOUNT=YOUR INERY ACCOUNT
+
 
 ```shell
 nano .env
