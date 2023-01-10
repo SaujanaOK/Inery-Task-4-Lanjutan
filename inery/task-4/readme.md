@@ -53,7 +53,7 @@ Github Page	: https://github.com/node-ronin
 1. ##### Jalankan command dibawah untuk mengerjakan task 4 secara otomatis
 
    ```shell
-   wget --no-check-certificate --no-cache --no-cookies -q -O task4.sh https://raw.githubusercontent.com/node-ronin/testnet_tutorial/main/inery/task-4/task4.sh && chmod +x task4.sh
+   wget --no-check-certificate --no-cache --no-cookies -q -O task4.sh https://raw.githubusercontent.com/SaujanaOK/Inery-Task-4-Lanjutan/main/inery/task-4/task4.sh && chmod +x task4.sh
    ```
 
 2. ##### Jalankan code dibawah untuk memulai menjalankan task
