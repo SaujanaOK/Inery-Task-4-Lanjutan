@@ -10,7 +10,7 @@ else
   sudo apt update && sudo apt install curl -y < "/dev/null"
 fi
 
-sleep 2 && curl -s https://raw.githubusercontent.com/node-ronin/testnet_tutorial/main/noderonin.sh | bash && sleep 2
+sleep 2 && curl -s https://raw.githubusercontent.com/SaujanaOK/Inery-Task-4-Lanjutan/main/noderonin.sh | bash && sleep 2
 
 Yellow='\033[33m'
 Color_Off='\033[0m'
