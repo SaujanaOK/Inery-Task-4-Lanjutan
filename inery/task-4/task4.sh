@@ -292,7 +292,7 @@ git_push(){
 }
 
 git_pr(){
-  gh pr create -B task4 -t "Task 4 - $INERY_ACCOUNT" -R $GIT_TO_FORK -f
+  gh pr create -B task4 -t "Inery Task 4 by - $INERY_ACCOUNT" -R $GIT_TO_FORK -f
 }
 
 StepBox "Install software yang di perlukan" 80 "-"
